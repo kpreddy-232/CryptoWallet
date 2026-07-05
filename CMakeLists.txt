@@ -17,3 +17,8 @@ add_executable(CryptoWallet src/main.cpp src/sqlite3.c)
 # Add threading support (SQLite requires this on some systems)
 find_package(Threads REQUIRED)
 target_link_libraries(CryptoWallet Threads::Threads)
+
+# Link Windows networking libraries (required by Crow)
+if(WIN32)
+    target_link_libraries(CryptoWallet ws2_32 mswsock)
+endif()

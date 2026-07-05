@@ -1,37 +1,56 @@
-# Prerequisites
+#Prerequisites
+
 *.d
 
-# Compiled Object files
+#Compiled Object files
+
 *.slo
 *.lo
 *.o
 *.obj
 
-# Precompiled Headers
+#Precompiled Headers
+
 *.gch
 *.pch
 
-# Compiled Dynamic libraries
+#Compiled Dynamic libraries
+
 *.so
 *.dylib
 *.dll
 
-# Compiled Static libraries
+#Compiled Static libraries
+
 *.lai
 *.la
 *.a
 *.lib
 
-# Executables
+#Executables
+
 *.exe
 *.out
 *.app
 
-# Build directory
+#Build directory
+
 build/
 
-# Database files
+#Database files
+
 *.db
 *.sqlite
 *.sqlite3
 data/
+
+#AWS Keys
+
+*.pem
+
+#IDEs and VS Code
+
+.vscode/
+.vs/
+*.suo
+*.user
